@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:background="#FFE0B2"
+ android:gravity="center"
+ android:orientation="vertical"
+ android:padding="30dp"> <!-- Light Orange Background -->
+ <!-- Title -->
+ <TextView
+ android:id="@+id/tv_title"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_alignParentTop="true"
+ android:layout_centerHorizontal="true"
+ android:paddingTop="30dp"
+ android:text="Expense Tracker"
+ android:textColor="#1976D2"
+ android:textSize="30sp"
+ android:textStyle="bold" />
+ <EditText
+ android:id="@+id/et_description"
+ android:layout_width="match_parent"
+ android:layout_height="50dp"
+ android:background="@drawable/input_box"
+ android:hint="Enter Description"
+ android:padding="12dp"
+ android:textSize="16sp" />
+ <EditText
+ android:id="@+id/et_amount"
+ android:layout_width="match_parent"
+ android:layout_height="50dp"
+ android:layout_marginTop="10dp"
+ android:background="@drawable/input_box"
+ android:hint="Enter Amount"
+ android:inputType="numberDecimal"
+ android:padding="12dp"
+ android:textSize="16sp" />
+10
+ <!-- Add Expense Button -->
+ <Button
+ android:id="@+id/btn_add"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="center"
+ android:layout_marginTop="20dp"
+ android:backgroundTint="#6A1B9A"
+ android:padding="10dp"
+ android:text="Add Expense"
+ android:textColor="#FFFFFF"
+ android:textSize="16sp" />
+ <!-- Table Layout for Expenses -->
+ <TableLayout
+ android:id="@+id/table_layout"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="20dp"
+ android:background="@android:color/white"
+ android:stretchColumns="*" />
+</LinearLayout>
